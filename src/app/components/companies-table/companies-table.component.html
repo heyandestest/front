@@ -1,0 +1,16 @@
+<div>
+    <table >
+        <tr>
+          <th class="pointer" (click)="sortData('name')">Nombre empresa</th>
+          <th class="pointer" (click)="sortData('sales')">Total de ventas</th>
+          <th>Comision</th>
+          <th>Detalle</th>
+        </tr>
+        <tr *ngFor="let company of companies">
+            <td>{{company.nameAgency}}</td>
+            <td>{{company.total_sales}}</td>
+            <td>{{company.comision}}</td>
+            <td><button (click)="goToCompany(company.nameAgency)">Ver detalle</button></td>
+          </tr>
+      </table>
+</div>

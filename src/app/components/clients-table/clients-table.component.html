@@ -1,0 +1,18 @@
+<div>
+    <table>
+        <tr>
+          <th>Nombre cliente</th>
+          <th>Personas</th>
+          <th>Dia</th>
+          <th>Hora</th>
+          <th>Valor venta</th>
+        </tr>
+        <tr *ngFor="let client of clients">
+          <td>{{client.name}}</td>
+          <td>{{client.persons}}</td>
+          <td>{{client.datePayment}}</td>
+          <td>{{client.hour}}</td>
+          <td>{{client.finalPrice}}</td>
+        </tr>
+      </table>
+</div>
